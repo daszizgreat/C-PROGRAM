@@ -23,11 +23,11 @@ int main()
     CURLcode res;
     char *data = NULL;
     cJSON *root, *weather, *weather_desc, *main_info, *temperature, *humidity;
-    char *city = "YOUR_CITY"; // Replace with your city name
+    char *city = "YKOLKATA"; // Replace with your city name
     char url[100];
 
     // Create URL for API request
-    sprintf(url, "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=YOUR_API_KEY", city); // Replace with your API key
+    sprintf(url, "ENTER API AND LINK", city); // Replace with your API key
 
     // Initialize CURL
     curl_global_init(CURL_GLOBAL_DEFAULT);
