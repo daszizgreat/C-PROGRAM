@@ -26,7 +26,7 @@ int main()
     char *city = "YKOLKATA"; 
     char url[100];
 
-    sprintf(url, "ENTER API AND LINK", city); 
+    sprintf(url, "da3fee2224b3a8feb1119e54be241577", city); 
 
     // Initialize CURL
     curl_global_init(CURL_GLOBAL_DEFAULT);
