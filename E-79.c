@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 #include <curl/curl.h>
 #include <cjson/cJSON.h>
 
@@ -23,10 +23,10 @@ int main()
     CURLcode res;
     char *data = NULL;
     cJSON *root, *weather, *weather_desc, *main_info, *temperature, *humidity;
-    char *city = "YKOLKATA"; 
+    char *city = "YKOLKATA";
     char url[100];
 
-    sprintf(url, "da3fee2224b3a8feb1119e54be241577", city); 
+    sprintf(url, "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=da3fee2224b3a8feb1119e54be241577", city);
 
     // Initialize CURL
     curl_global_init(CURL_GLOBAL_DEFAULT);
